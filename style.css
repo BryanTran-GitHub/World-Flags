@@ -1,0 +1,39 @@
+body {
+  position: relative;
+  top: 150px;
+}
+
+header {
+  position: fixed;
+  text-align: center;
+  top: 25px;
+  width: 100%;
+}
+
+h1,
+h2,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.Page-Name {
+  font-family: "Roboto Slab", serif;
+  font-size: 3rem;
+  font-optical-sizing: auto;
+  font-weight: 420;
+  font-style: normal;
+  text-decoration: underline;
+}
+
+.Page-Subtitle {
+  font-family: "EB Garamond", serif;
+  font-style: italic;
+}
+
+.Continents>h1 {
+  font-size: 3rem;
+  text-decoration: underline;
+}
+
+.Country>h2 {}
