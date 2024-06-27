@@ -1,39 +1,44 @@
-body {
-  position: relative;
-  top: 150px;
-}
-
 header {
   position: fixed;
-  text-align: center;
-  top: 25px;
+  background-color: black;
+  color: whitesmoke;
+  height: 150px;
   width: 100%;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  border-bottom: 10px solid red;
 }
 
-h1,
-h2,
-p {
+.Page-Title,
+.Page-Subtitle {
+  position: relative;
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  text-underline-position: auto;
   margin: 0;
   padding: 0;
 }
 
-.Page-Name {
-  font-family: "Roboto Slab", serif;
-  font-size: 3rem;
-  font-optical-sizing: auto;
-  font-weight: 420;
-  font-style: normal;
+.Page-Title {
+  font-size: 4rem;
   text-decoration: underline;
+  top: 10px;
 }
 
 .Page-Subtitle {
-  font-family: "EB Garamond", serif;
   font-style: italic;
+  top: 5px;
+  bottom: 10px;
 }
 
-.Continents>h1 {
-  font-size: 3rem;
-  text-decoration: underline;
+.Continents {
+  position: absolute;
+  top: 150px;
+  margin: 0;
+  padding: 0;
 }
-
-.Country>h2 {}
