@@ -1,44 +1,87 @@
-header {
-  position: fixed;
-  background-color: black;
-  color: whitesmoke;
-  height: 150px;
-  width: 100%;
-  top: 0;
-  left: 0;
+body {
+  position: static;
   margin: 0;
   padding: 0;
-  border-bottom: 10px solid red;
+  width: 1000px;
 }
 
-.Page-Title,
-.Page-Subtitle {
+header {
   position: relative;
   font-family: "Roboto Slab", serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
   text-align: center;
-  text-underline-position: auto;
+  background-color: black;
+  color: whitesmoke;
+  border: 10px inset red;
+  height: 150px;
+  width: 1000px;
+}
+
+footer {
+  position: relative;
+  text-align: center;
+  background-color: grey;
+  color: whitesmoke;
+  bottom: 0;
+  padding: 5px 0px;
+  width: 100%;
+}
+
+li {
+  width: fit-content;
+}
+
+.ConName {
+  text-align: center;
+  text-decoration: underline;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.Title,
+.Subtitle {
+  position: relative;
+  top: 25px;
   margin: 0;
   padding: 0;
 }
 
-.Page-Title {
-  font-size: 4rem;
+.Title {
+  font-size: 3rem;
   text-decoration: underline;
-  top: 10px;
+  text-underline-position: under;
 }
 
-.Page-Subtitle {
+.Subtitle {
   font-style: italic;
-  top: 5px;
-  bottom: 10px;
 }
 
 .Continents {
-  position: absolute;
-  top: 150px;
+  position: relative;
+  bottom: 10%;
+  left: 40px;
+  width: 1000px;
+}
+
+.flag {
+  position: relative;
+  border: 1px solid black;
+  width: 900px;
+  height: 600px;
+  margin-bottom: 5%;
+}
+
+#Japan > .flag > .Outer-Flag {
+  background-color: white;
+}
+
+#Japan > .flag > .Inner-Flag {
+  position: relative;
+  background-color: red;
+  height: 50%;
+  width: 33%;
+  border-radius: 100%;
   margin: 0;
   padding: 0;
+  left: 33%;
+  top: 20%;
 }
