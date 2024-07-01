@@ -21,20 +21,96 @@ footer {
   text-align: center;
   background-color: grey;
   color: whitesmoke;
+  border: 10px solid grey;
   bottom: 0;
-  padding: 5px 0px;
-  width: 100%;
+  margin-top: 10%;
+  padding: 0;
+  width: 1000px;
+}
+
+ul {
+  margin: 0;
 }
 
 li {
   width: fit-content;
 }
 
+.Continents {
+  position: relative;
+  bottom: 10%;
+}
+
+.Countries {
+  width: 100%;
+}
+
 .ConName {
+  column-span: all;
   text-align: center;
   text-decoration: underline;
   margin-top: 20px;
   margin-bottom: 10px;
+}
+
+.Africa {
+  position: relative;
+  columns: 6;
+  column-gap: 0;
+  width: 900px;
+  height: max-content;
+  left: 50px;
+}
+
+.America {
+  position: relative;
+  width: 900px;
+  height: 425px;
+  left: 50px;
+  right: 50px;
+  margin: 0;
+  padding: 0;
+}
+
+.Caribbean {
+  position: absolute;
+  width: 225px;
+}
+
+.CAmerica {
+  position: absolute;
+  width: 225px;
+  left: 225px;
+}
+
+.NAmerica {
+  position: absolute;
+  width: 225px;
+  left: 450px;
+}
+
+.SAmerica {
+  position: absolute;
+  width: 225px;
+  left: 675px;
+}
+
+.Asia {
+  position: relative;
+  width: 900px;
+  left: 50px;
+}
+
+.Europe {
+  position: relative;
+  width: 900px;
+  left: 50px;
+}
+
+.Oceania {
+  position: relative;
+  width: 900px;
+  left: 50px;
 }
 
 .Title,
@@ -53,13 +129,6 @@ li {
 
 .Subtitle {
   font-style: italic;
-}
-
-.Continents {
-  position: relative;
-  bottom: 10%;
-  left: 40px;
-  width: 1000px;
 }
 
 .flag {
