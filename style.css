@@ -1,8 +1,8 @@
 body {
   position: static;
-  width: 1020px;
   margin: 0;
   padding: 0;
+  width: 1000px;
 }
 
 header {
@@ -24,7 +24,12 @@ footer {
   border: 10px solid grey;
   width: 100%;
   bottom: 0;
-  margin-top: 5%;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  margin: 0;
   padding: 0;
 }
 
@@ -34,10 +39,8 @@ ul {
 
 .Continents {
   position: relative;
+  height: 1450px;
   left: 10px;
-  width: 1000px;
-  margin: 0;
-  padding: 0;
 }
 
 .ConName {
@@ -52,27 +55,95 @@ ul {
 
 .Africa {
   position: relative;
-  columns: 5;
+  columns: 6;
   column-gap: 0;
   width: 100%;
+  height: 290px;
   margin: 0;
   padding: 0;
 }
 
 .America {
   position: relative;
-  columns: 4;
-  column-gap: 0;
   width: 100%;
+  height: 225px;
+  margin: 0;
+  padding: 0;
+}
+
+.America > .Caribbean {
+  position: absolute;
+  columns: 2;
+  column-gap: 0;
+  left: 640px;
+  width: 350px;
+  margin: 0;
+  padding: 0;
+}
+
+.America > .CAmerica {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+}
+
+.America > .NAmerica {
+  position: absolute;
+  left: 200px;
+  width: 175px;
+  margin: 0;
+  padding: 0;
+}
+
+.America > .SAmerica {
+  position: absolute;
+  columns: 2;
+  column-gap: 0;
+  left: 400px;
+  width: 225px;
   margin: 0;
   padding: 0;
 }
 
 .Asia {
   position: relative;
-  columns: 7;
+  height: 280px;
+  margin: 0;
+  padding: 0;
+}
+
+.Asia > .CAsia {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+}
+
+.Asia > .EAsia {
+  position: absolute;
+  left: 200px;
+  margin: 0;
+  padding: 0;
+}
+
+.Asia > .SAsia {
+  position: absolute;
+  left: 375px;
+  margin: 0;
+  padding: 0;
+}
+
+.Asia > .SEAsia {
+  position: absolute;
+  left: 550px;
+  margin: 0;
+  padding: 0;
+}
+
+.Asia > .WAsia {
+  position: absolute;
+  columns: 2;
   column-gap: 0;
-  width: 100%;
+  left: 750px;
   margin: 0;
   padding: 0;
 }
@@ -81,18 +152,41 @@ ul {
   position: relative;
   columns: 6;
   column-gap: 0;
-  width: 100%;
+  width: 1000px;
+  height: 250px;
   margin: 0;
   padding: 0;
 }
 
 .Oceania {
   position: relative;
-  columns: 5;
-  column-gap: 0;
   width: 100%;
-  margin: 0;
-  padding: 0;
+  height: 200px;
+  bottom: 0;
+}
+
+.Oceania > .Australasia {
+  position: absolute;
+}
+
+.Oceania > .Melanesia {
+  position: absolute;
+  columns: 2;
+  column-gap: 0;
+  left: 180px;
+}
+
+.Oceania > .Micronesia {
+  position: absolute;
+  columns: 2;
+  column-gap: 0;
+  left: 525px;
+  width: 300px;
+}
+
+.Oceania > .Polynesia {
+  position: absolute;
+  left: 850px;
 }
 
 .Title,
