@@ -22,95 +22,171 @@ footer {
   background-color: grey;
   color: whitesmoke;
   border: 10px solid grey;
+  width: 100%;
   bottom: 0;
-  margin-top: 10%;
+  margin: 0;
   padding: 0;
-  width: 1000px;
+}
+
+h2 {
+  margin: 0;
+  padding: 0;
 }
 
 ul {
   margin: 0;
 }
 
-li {
-  width: fit-content;
-}
-
 .Continents {
   position: relative;
-  bottom: 10%;
-}
-
-.Countries {
-  width: 100%;
+  height: 1450px;
+  left: 10px;
 }
 
 .ConName {
   column-span: all;
   text-align: center;
   text-decoration: underline;
-  margin-top: 20px;
+  width: 100%;
+  margin-top: 50px;
   margin-bottom: 10px;
+  padding: 0;
 }
 
 .Africa {
   position: relative;
   columns: 6;
   column-gap: 0;
-  width: 900px;
-  height: max-content;
-  left: 50px;
-}
-
-.America {
-  position: relative;
-  width: 900px;
-  height: 425px;
-  left: 50px;
-  right: 50px;
+  width: 100%;
+  height: 290px;
   margin: 0;
   padding: 0;
 }
 
-.Caribbean {
-  position: absolute;
-  width: 225px;
+.America {
+  position: relative;
+  width: 100%;
+  height: 225px;
+  margin: 0;
+  padding: 0;
 }
 
-.CAmerica {
+.America > .Caribbean {
   position: absolute;
-  width: 225px;
-  left: 225px;
+  columns: 2;
+  column-gap: 0;
+  left: 640px;
+  width: 350px;
+  margin: 0;
+  padding: 0;
 }
 
-.NAmerica {
+.America > .CAmerica {
   position: absolute;
-  width: 225px;
-  left: 450px;
+  margin: 0;
+  padding: 0;
 }
 
-.SAmerica {
+.America > .NAmerica {
   position: absolute;
+  left: 200px;
+  width: 175px;
+  margin: 0;
+  padding: 0;
+}
+
+.America > .SAmerica {
+  position: absolute;
+  columns: 2;
+  column-gap: 0;
+  left: 400px;
   width: 225px;
-  left: 675px;
+  margin: 0;
+  padding: 0;
 }
 
 .Asia {
   position: relative;
-  width: 900px;
-  left: 50px;
+  height: 280px;
+  margin: 0;
+  padding: 0;
+}
+
+.Asia > .CAsia {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+}
+
+.Asia > .EAsia {
+  position: absolute;
+  left: 200px;
+  margin: 0;
+  padding: 0;
+}
+
+.Asia > .SAsia {
+  position: absolute;
+  left: 375px;
+  margin: 0;
+  padding: 0;
+}
+
+.Asia > .SEAsia {
+  position: absolute;
+  left: 550px;
+  margin: 0;
+  padding: 0;
+}
+
+.Asia > .WAsia {
+  position: absolute;
+  columns: 2;
+  column-gap: 0;
+  left: 750px;
+  margin: 0;
+  padding: 0;
 }
 
 .Europe {
   position: relative;
-  width: 900px;
-  left: 50px;
+  columns: 6;
+  column-gap: 0;
+  width: 1000px;
+  height: 250px;
+  margin: 0;
+  padding: 0;
 }
 
 .Oceania {
   position: relative;
-  width: 900px;
-  left: 50px;
+  width: 100%;
+  height: 200px;
+  bottom: 0;
+}
+
+.Oceania > .Australasia {
+  position: absolute;
+}
+
+.Oceania > .Melanesia {
+  position: absolute;
+  columns: 2;
+  column-gap: 0;
+  left: 180px;
+}
+
+.Oceania > .Micronesia {
+  position: absolute;
+  columns: 2;
+  column-gap: 0;
+  left: 525px;
+  width: 300px;
+}
+
+.Oceania > .Polynesia {
+  position: absolute;
+  left: 850px;
 }
 
 .Title,
