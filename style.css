@@ -1,86 +1,74 @@
 body {
-  position: static;
-  margin: 0 10px;
-  padding: 0;
-  width: 1000px;
+	display: grid;
+	grid-template: 150px repeat(5, max-content) auto / 20% 60% 20%;
+	grid-template-areas:
+		". header ."
+		". africa ."
+		". america ."
+		". asia ."
+		". europe ."
+		". oceania ."
+		". footer .";
+	margin: 0;
+	padding: 0;
 }
 
 header {
-  position: relative;
-  font-family: "Roboto Slab", serif;
-  text-align: center;
-  background-color: black;
-  color: whitesmoke;
-  border: 10px inset red;
-  width: 1000px;
-  height: 150px;
-  left: -10px;
+	grid-area: header;
+	font-family: "Roboto Slab", serif;
+	text-align: center;
+	background-color: black;
+	color: whitesmoke;
+	border: 10px inset red;
 }
 
 footer {
-  position: relative;
-  text-align: center;
-  background-color: grey;
-  color: whitesmoke;
-  border: 10px solid grey;
-  width: 1000px;
-  height: auto;
-  bottom: 0;
-  left: -10px;
-  margin-top: 5%;
-  padding: 0;
+	grid-area: footer;
+	text-align: center;
+	background-color: grey;
+	color: whitesmoke;
+	border: 10px solid grey;
+	margin-top: 5%;
+	padding: 0;
 }
 
 h2 {
-  margin: 0;
-  padding: 0;
+	margin: 0;
+	padding: 0;
 }
 
 ul {
-  margin: 0;
-}
-
-.Continents {
-  position: relative;
-  width: 100%;
-  height: auto;
-  margin: 0;
-  padding: 0;
+	margin: 0;
 }
 
 .ConName {
-  column-span: all;
-  text-align: center;
-  text-decoration: underline;
-  width: 100%;
-  margin-top: 3%;
-  padding: 0;
+	column-span: all;
+	text-align: center;
+	text-decoration: underline;
+	width: 100%;
+	margin-top: 3%;
+	padding: 0;
 }
 
 .Africa {
-  position: relative;
-  display: block;
-  columns: 5;
-  column-gap: 0;
-  border: 1px solid black;
-  width: 100%;
+	grid-area: africa;
+	columns: 5;
+	column-gap: 0;
+	border: 1px solid black;
+	/* width: 100%;
   height: auto;
   margin: 0;
-  padding: 0;
+  padding: 0; */
 }
 
 .America {
-  position: relative;
-  display: block;
-  border: 1px solid black;
-  width: 100%;
-  height: auto;
-  margin: 0;
-  padding: 0;
+	grid-area: america;
+	border: 1px solid black;
+	display: grid;
+	grid-auto-flow: column;
 }
 
-.America > .Caribbean {
-  position: relative;
+/* .America > .Caribbean {
   display: inline-block;
   border: 1px solid black;
   width: 25%;
@@ -90,7 +78,6 @@ ul {
 }
 
 .America > .CAmerica {
-  position: relative;
   display: inline-block;
   border: 1px solid black;
   width: 25%;
@@ -100,7 +87,6 @@ ul {
 }
 
 .America > .NAmerica {
-  position: relative;
   display: inline-block;
   border: 1px solid black;
   width: 25%;
@@ -110,24 +96,22 @@ ul {
 }
 
 .America > .SAmerica {
-  position: relative;
   display: inline-block;
   border: 1px solid black;
   width: 20%;
   height: auto;
   margin: 0;
   padding: 0;
-}
+} */
 
 .Asia {
-  position: relative;
-  border: 1px solid black;
-  margin: 0;
-  padding: 0;
+	grid-area: asia;
+	border: 1px solid black;
+	/* margin: 0;
+  padding: 0; */
 }
 
-.Asia > .CAsia {
-  position: relative;
+/* .Asia > .CAsia {
   display: inline-block;
   border: 1px solid black;
   margin: 0;
@@ -135,7 +119,6 @@ ul {
 }
 
 .Asia > .EAsia {
-  position: relative;
   display: inline-block;
   border: 1px solid black;
   margin: 0;
@@ -143,7 +126,6 @@ ul {
 }
 
 .Asia > .SAsia {
-  position: relative;
   display: inline-block;
   border: 1px solid black;
   margin: 0;
@@ -151,7 +133,6 @@ ul {
 }
 
 .Asia > .SEAsia {
-  position: relative;
   display: inline-block;
   border: 1px solid black;
   margin: 0;
@@ -159,78 +140,70 @@ ul {
 }
 
 .Asia > .WAsia {
-  position: relative;
   display: inline-block;
   border: 1px solid black;
   margin: 0;
   padding: 0;
-}
+} */
 
 .Europe {
-  position: relative;
-  display: block;
-  columns: 6;
-  column-gap: 0;
-  border: 1px solid black;
-  width: 100%;
+	grid-area: europe;
+	columns: 6;
+	column-gap: 0;
+	border: 1px solid black;
+	/* width: 100%;
   height: auto;
   margin: 0;
-  padding: 0;
+  padding: 0; */
 }
 
 .Oceania {
-  position: relative;
-  display: block;
-  border: 1px solid black;
-  width: 100%;
+	grid-area: oceania;
+	border: 1px solid black;
+	/* width: 100%;
   height: auto;
-  bottom: 0;
+  bottom: 0; */
 }
 
-.Oceania > .Australasia {
-  position: relative;
+/* .Oceania > .Australasia {
   display: inline-block;
   border: 1px solid black;
 }
 
 .Oceania > .Melanesia {
-  position: relative;
   display: inline-block;
   border: 1px solid black;
 }
 
 .Oceania > .Micronesia {
-  position: relative;
   display: inline-block;
   border: 1px solid black;
   width: auto;
 }
 
 .Oceania > .Polynesia {
-  position: relative;
   display: inline-block;
   border: 1px solid black;
-}
+} */
 
 .Title,
 .Subtitle {
-  position: relative;
-  top: 25px;
-  margin: 0;
-  padding: 0;
+	top: 25px;
+	margin: 0;
+	padding: 0;
 }
 
 .Title {
-  font-size: 3rem;
-  text-decoration: underline;
-  text-underline-position: under;
+	font-size: 3rem;
+	text-decoration: underline;
+	text-underline-position: under;
 }
 
 .Subtitle {
-  font-style: italic;
+	font-style: italic;
 }
 
-.flag {
+/* .flag {
   position: relative;
   border: 1px solid black;
   width: 900px;
@@ -252,4 +225,4 @@ ul {
   padding: 0;
   left: 33%;
   top: 20%;
-}
+} */
