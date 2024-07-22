@@ -1,4 +1,4 @@
-@media (min-width: 1024px) {
+@media (min-width: 1080px) {
 	body {
 		display: grid;
 		grid-template: 150px repeat(5, auto) auto / auto 900px auto;
@@ -42,8 +42,9 @@
 		padding: 0;
 	}
 
-	ul {
+	ol {
 		column-count: 5;
+		column-gap: 30px;
 		margin: 0;
 	}
 
@@ -90,122 +91,4 @@
 		margin: 0;
 		padding: 0;
 	}
-}
-
-@media (min-width: 768px) and (max-width: 1023px) {
-	body {
-		display: grid;
-		grid-template: 150px repeat(5, auto) auto / auto 750px auto;
-		grid-template-areas:
-			"header header header"
-			". africa ."
-			". america ."
-			". asia ."
-			". europe ."
-			". oceania ."
-			"footer footer footer";
-		gap: 30px 0;
-		margin: 0;
-		padding: 0;
-	}
-
-	header {
-		grid-area: header;
-		justify-content: center;
-		align-content: center;
-		font-family: "Roboto Slab", serif;
-		text-align: center;
-		background-color: black;
-		color: whitesmoke;
-		border: 10px inset red;
-		margin: 0;
-		padding: 0;
-	}
-
-	.Title {
-		font-size: 3rem;
-		text-decoration: underline;
-		text-underline-position: under;
-		margin: 0;
-		padding: 0;
-	}
-
-	.Subtitle {
-		font-style: italic;
-		margin: 0;
-		padding: 0;
-	}
-
-	ul {
-		column-count: 3;
-		margin: 0;
-	}
-
-	.ConName {
-		column-span: all;
-		text-align: center;
-		text-decoration: underline;
-	}
-
-	.Africa {
-		grid-area: africa;
-		margin: 0;
-		padding: 0;
-	}
-
-	.America {
-		grid-area: america;
-		margin: 0;
-		padding: 0;
-	}
-
-	.Asia {
-		grid-area: asia;
-		margin: 0;
-		padding: 0;
-	}
-
-	.Europe {
-		grid-area: europe;
-		margin: 0;
-		padding: 0;
-	}
-
-	.Oceania {
-		grid-area: oceania;
-		margin: 0;
-		padding: 0;
-	}
-
-	footer {
-		grid-area: footer;
-		align-content: end;
-		text-align: center;
-		margin: 0;
-		padding: 0;
-	}
-}
-
-.flag {
-	position: relative;
-	border: 1px solid black;
-	width: 900px;
-	height: 600px;
-	margin-bottom: 5%;
-}
-
-#Japan > .flag > .Outer-Flag {
-	background-color: white;
-}
-
-#Japan > .flag > .Inner-Flag {
-	position: relative;
-	background-color: red;
-	height: 50%;
-	width: 33%;
-	border-radius: 100%;
-	margin: 0;
-	padding: 0;
-	left: 33%;
-	top: 20%;
 }
