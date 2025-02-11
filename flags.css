@@ -1,0 +1,283 @@
+body {
+	width: 1080px;
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	grid-area: header;
+	justify-content: center;
+	align-content: center;
+	font-family: "Roboto Slab", serif;
+	text-align: center;
+	background-color: black;
+	color: whitesmoke;
+	border: 10px inset red;
+	margin: 0;
+	padding: 0;
+}
+
+.Title {
+	font-size: 3rem;
+	text-decoration: underline;
+	text-underline-position: under;
+	margin: 0;
+	padding: 0;
+}
+
+.Subtitle {
+	font-style: italic;
+	margin: 0;
+	padding: 0;
+}
+
+.flag {
+	display: inline-grid;
+	grid-template-columns: 90px 900px 90px;
+	gap: 50px 10px;
+	margin-top: 50px;
+	padding: 0;
+}
+
+h1 {
+	margin: 0;
+	padding: 0;
+}
+
+#Austria {
+	grid-column: 2;
+}
+
+#Austria > div {
+	display: grid;
+	grid-template-rows: 1fr 1fr 1fr;
+	width: 100%;
+	height: 600px;
+	background-color: #ed2939;
+	border: 1px solid grey;
+	margin: 0;
+	padding: 0;
+}
+
+#Austria > div > div {
+	grid-row: 2;
+	background-color: white;
+	margin: 0;
+	padding: 0;
+}
+
+#Bahamas {
+	grid-column: 2;
+}
+
+#Bangladesh {
+	grid-column: 2;
+}
+
+#Bangladesh > div {
+	display: grid;
+	grid-template: repeat(3, 1fr) / repeat(4, 25%);
+	background-color: #006a4e;
+	width: 900px;
+	height: 600px;
+	margin: 0;
+	padding: 0;
+}
+
+#Bangladesh > div > div {
+	grid-area: 2 / 2;
+	background-color: #f42a41;
+	width: 300px;
+	height: 300px;
+	border-radius: 50%;
+	margin: 0;
+	padding: 0;
+}
+
+#Indonesia {
+	grid-column: 2;
+}
+
+#Indonesia > div {
+	display: grid;
+	grid-template-rows: 1fr 1fr;
+	width: 100%;
+	height: 600px;
+	background-color: #ce1126;
+	border: 1px solid grey;
+}
+
+#Indonesia > div > div {
+	grid-row: 2;
+	background-color: white;
+}
+
+#Japan {
+	grid-column: 2;
+}
+
+#Japan > div {
+	display: grid;
+	grid-template: 3 / 3;
+	background-color: white;
+	width: 100%;
+	height: 600px;
+	border: 1px solid grey;
+	margin: 0;
+	padding: 0;
+}
+
+#Japan > div > div {
+	grid-area: 2 / 2;
+	background-color: red;
+	width: 300px;
+	height: 300px;
+	border-radius: 50%;
+	margin: 0;
+	padding: 0;
+}
+
+#Latvia {
+	grid-column: 2;
+}
+
+#Latvia > div {
+	display: grid;
+	grid-template-rows: 1fr 100px 1fr;
+	width: 100%;
+	height: 450px;
+	background-color: #9e3039;
+	border: 1px solid grey;
+	margin: 0;
+	padding: 0;
+}
+
+#Latvia > div > div {
+	grid-row: 2;
+	background-color: white;
+	margin: 0;
+	padding: 0;
+}
+
+#Monaco {
+	grid-column: 2;
+}
+
+#Monaco > div {
+	display: grid;
+	grid-template-rows: 1fr 1fr;
+	width: 100%;
+	height: 600px;
+	background-color: #ce1126;
+	border: 1px solid grey;
+}
+
+#Monaco > div > div {
+	grid-row: 2;
+	background-color: white;
+}
+
+#Nigeria {
+	grid-column: 2;
+}
+
+#Nigeria > div {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	width: 100%;
+	height: 450px;
+	background-color: #008751;
+}
+
+#Nigeria > div > div {
+	grid-column: 2;
+	background-color: white;
+}
+
+#Palau {
+	grid-column: 2;
+}
+
+#Palau > div {
+	display: grid;
+	grid-template: repeat(3, 1fr) / repeat(4, 25%);
+	background-color: #4aadd6;
+	width: 900px;
+	height: 600px;
+	margin: 0;
+	padding: 0;
+}
+
+#Palau > div > div {
+	grid-area: 2 / 2;
+	background-color: #ffde00;
+	width: 300px;
+	height: 300px;
+	border-radius: 50%;
+	margin: 0;
+	padding: 0;
+}
+
+#Peru {
+	grid-column: 2;
+}
+
+#Peru > div {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	width: 100%;
+	height: 600px;
+	background-color: #d91023;
+}
+
+#Peru > div > div {
+	grid-column: 2;
+	background-color: white;
+}
+
+#Poland {
+	grid-column: 2;
+}
+
+#Poland > div {
+	display: grid;
+	grid-template-rows: 2;
+	width: 100%;
+	height: 600px;
+	background-color: white;
+	border: 1px solid grey;
+}
+
+#Poland > div > div {
+	grid-row: 2;
+	background-color: #dc143c;
+}
+
+#Ukraine {
+	grid-column: 2;
+}
+
+#Ukraine > div {
+	display: grid;
+	grid-template-rows: 2;
+	width: 100%;
+	height: 600px;
+	background-color: #005bbb;
+	margin: 0;
+	padding: 0;
+}
+
+#Ukraine > div > div {
+	grid-row: 2;
+	background-color: #ffd500;
+	margin: 0;
+	padding: 0;
+}
+
+footer {
+	grid-area: footer;
+	align-content: end;
+	text-align: center;
+	margin-top: 50px;
+	padding: 0;
+}
